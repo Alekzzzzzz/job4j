@@ -8,21 +8,21 @@
     <!--Расширение файла должно быть java, properties, xml-->
     <property name="fileExtensions" value="java, properties, xml"/>
 
-    <!-- Checks for Size Violations.                    -->
-    <!-- See http://checkstyle.sf.net/config_sizes.html -->
+    <!-- Checks for Size Violations.                   , XmlHighlighting, XmlHighlighting -->
+    <!-- See http://checkstyle.sf.net/config_sizes.html, XmlHighlighting, XmlHighlighting -->
     <module name="FileLength"/>
 
-    <!-- Checks for Headers                                -->
-    <!-- See http://checkstyle.sf.net/config_header.html   -->
-    <!-- <module name="Header"> -->
-    <!--   <property name="headerFile" value="${checkstyle.header.file}"/> -->
-    <!--   <property name="fileExtensions" value="java"/> -->
-    <!-- </module> -->
+    <!-- Checks for Headers                               , XmlHighlighting, XmlHighlighting -->
+    <!-- See http://checkstyle.sf.net/config_header.html  , XmlHighlighting, XmlHighlighting -->
+    <!-- <module name="Header">, XmlHighlighting, XmlHighlighting -->
+    <!--   <property name="headerFile" value="${checkstyle.header.file}"/>, XmlHighlighting, XmlHighlighting -->
+    <!--   <property name="fileExtensions" value="java"/>, XmlHighlighting, XmlHighlighting -->
+    <!-- </module>, XmlHighlighting, XmlHighlighting -->
 
     <module name="TreeWalker">
 
-        <!-- Checks for Naming Conventions.                  -->
-        <!-- See http://checkstyle.sf.net/config_naming.html -->
+        <!-- Checks for Naming Conventions.                 , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_naming.html, XmlHighlighting, XmlHighlighting -->
         <module name="ConstantName"/>
         <!--<module name="LocalFinalVariableName"/>-->
         <module name="LocalVariableName"/>
@@ -35,14 +35,14 @@
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
-        <!-- Checks for Size Violations.                    -->
-        <!-- See http://checkstyle.sf.net/config_sizes.html -->
+        <!-- Checks for Size Violations.                   , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_sizes.html, XmlHighlighting, XmlHighlighting -->
         <!--<module name="LineLength"/>-->
         <module name="MethodLength"/>
         <module name="ParameterNumber"/>
 
-        <!-- Checks for whitespace                               -->
-        <!-- See http://checkstyle.sf.net/config_whitespace.html -->
+        <!-- Checks for whitespace                              , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_whitespace.html, XmlHighlighting, XmlHighlighting -->
         <module name="EmptyForIteratorPad"/>
         <module name="GenericWhitespace"/>
         <module name="MethodParamPad"/>
@@ -54,19 +54,19 @@
         <module name="WhitespaceAfter"/>
         <module name="WhitespaceAround"/>
 
-        <!-- Modifier Checks                                    -->
-        <!-- See http://checkstyle.sf.net/config_modifiers.html -->
+        <!-- Modifier Checks                                   , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_modifiers.html, XmlHighlighting, XmlHighlighting -->
 
-        <!-- Checks for blocks. You know, those {}'s         -->
-        <!-- See http://checkstyle.sf.net/config_blocks.html -->
+        <!-- Checks for blocks. You know, those {}'s        , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_blocks.html, XmlHighlighting, XmlHighlighting -->
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock"/>
         <module name="LeftCurly"/>
         <module name="NeedBraces"/>
         <module name="RightCurly"/>
 
-        <!-- Checks for common coding problems               -->
-        <!-- See http://checkstyle.sf.net/config_coding.html -->
+        <!-- Checks for common coding problems              , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_coding.html, XmlHighlighting, XmlHighlighting -->
         <!--<module name="AvoidInlineConditionals"/>-->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
@@ -78,15 +78,15 @@
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
 
-        <!-- Checks for class design                         -->
-        <!-- See http://checkstyle.sf.net/config_design.html -->
+        <!-- Checks for class design                        , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_design.html, XmlHighlighting, XmlHighlighting -->
         <!--<module name="DesignForExtension"/>-->
         <!--<module name="FinalClass"/>-->
         <!--<module name="HideUtilityClassConstructor"/>-->
         <module name="InterfaceIsType"/>
 
-        <!-- Miscellaneous other checks.                   -->
-        <!-- See http://checkstyle.sf.net/config_misc.html -->
+        <!-- Miscellaneous other checks.                  , XmlHighlighting, XmlHighlighting -->
+        <!-- See http://checkstyle.sf.net/config_misc.html, XmlHighlighting, XmlHighlighting -->
         <module name="ArrayTypeStyle"/>
         <!--<module name="FinalParameters"/>-->
         <module name="TodoComment"/>

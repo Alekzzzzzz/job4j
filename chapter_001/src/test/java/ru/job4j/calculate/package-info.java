@@ -5,4 +5,4 @@
  * @version $Id$
  * @since0.1
  */
-package ru.job4j;
+package ru.job4j.calculate;
