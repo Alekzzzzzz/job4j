@@ -1,7 +1,7 @@
 /**
  * //TODO add comments.
  *
- * @author Alexander Gaponenko (parsentev@yandex.ru)
+ * @author Alexander Gaponenko (Proton1987@yandex.ru)
  * @version $Id$
  * @since0.1
  */
