@@ -20,6 +20,11 @@ public class DummyBotTest {
     }
 
     @Test
+    /**
+     * Method main
+     * Hello, job4j
+     *
+     */
     public void whenByeBot() {
         DummyBot bot = new DummyBot();
         assertThat(
