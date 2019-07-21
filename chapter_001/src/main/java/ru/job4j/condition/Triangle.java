@@ -64,7 +64,7 @@ public class Triangle {
             // написать формулу для расчета площади треугольника.
 
             rsl = p *(p - a) * (p - b) * (p - c);
-
+           rsl = Math.sqrt(rsl);
         }
         return rsl;
     }
