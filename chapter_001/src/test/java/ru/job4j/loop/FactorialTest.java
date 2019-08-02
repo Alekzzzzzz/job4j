@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
 public class FactorialTest {
     /**
      * Test факториал числа 5
-     * {@value} ожидаемое число 25
+     * {@value} ожидаемое число 120
      */
 
     @Test
@@ -21,7 +21,7 @@ public class FactorialTest {
         //напишите здесь тест, проверяющий, что факториал для числа 5 равен 120.
         Factorial calc = new Factorial();
         int result = calc.calc(5);
-        assertThat(result,is(25));
+        assertThat(result,is(120));
     }
 
     /**
