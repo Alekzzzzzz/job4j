@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="117b9b7a-fedd-4856-a00c-e4e469e860d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="117b9b7a-fedd-4856-a00c-e4e469e860d7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/chapter_001/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -300,6 +297,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/job4j" />
       <path value="$PROJECT_DIR$/new-job4j" />
+      <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="&quot;nout&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;nout&quot;" />
