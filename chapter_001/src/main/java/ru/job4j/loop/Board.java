@@ -1,6 +1,16 @@
 package ru.job4j.loop;
 
+/**
+ * Board
+ * @author Alexander Gaponenko (Proton1987@yandex.ru)
+ */
 public class Board {
+    /**
+     *
+     * @param width ширина доски
+     * @param height высота доски
+     * @return возвращаем шахматную доску
+     */
     public String paint(int width, int height) {
         StringBuilder screen = new StringBuilder();
         String ln = System.lineSeparator();

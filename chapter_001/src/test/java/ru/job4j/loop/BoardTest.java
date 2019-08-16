@@ -4,6 +4,10 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+/**
+ * BoardTest
+ * @author Alexander Gaponenko (Proton1987@yandex.ru)
+ */
 
 public class BoardTest {
     @Test
