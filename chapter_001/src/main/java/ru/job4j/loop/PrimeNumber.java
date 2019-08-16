@@ -1,6 +1,16 @@
 package ru.job4j.loop;
 
+/**
+ * PrimeNumner
+ * @author Alexander Gaponenko (Proton1987@yandex.ru)
+ */
+
 public class PrimeNumber {
+    /**
+     * calc
+     * @param finish число на вход
+     * @return возвращаем количество простых чисел
+     */
     public int calc(int finish) {
         boolean b = true;
         int count = 0;
