@@ -7,10 +7,7 @@ public class Check {
             if (data[i] != data[i+1]){
                 result = false;
                 break;
-            }else {
-                result = true;
             }
-
         }
 
         return result;
