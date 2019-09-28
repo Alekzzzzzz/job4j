@@ -1,9 +1,9 @@
 package ru.job4j.array;
 
 public class FindLoop {
-    public int indexOf(int[] data, int el) {
+    public int indexOf(int[] data, int el, int start, int finish) {
         int rst = -1; // если элемента нет в массиве, то возвращаем -1.
-        for (int index = 0; index != data.length; index++) {// проходим по циклу от 0 до выбранного числа
+        for (int index = start; index < finish; index++) {// проходим по циклу от 0 до выбранного числа
             if (data[index] == el) {// если индекс = выбранному числу
                 rst = index;// то выводим индекс
                 break;

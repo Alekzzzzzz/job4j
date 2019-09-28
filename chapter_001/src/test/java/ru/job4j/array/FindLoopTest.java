@@ -11,7 +11,9 @@ public class FindLoopTest {
         FindLoop find = new FindLoop();
         int[] input = new int[] {5, 10, 3, };//количество элементов и их значение в массиве
         int value = 5;
-       int result = find.indexOf(input, value);
+        int start = 0;
+        int finish = input.length ;
+       int result = find.indexOf(input, value, start, finish);
        int expect = 0;
         System.out.println(result);
        assertThat(result, is(expect));
@@ -20,9 +22,22 @@ public class FindLoopTest {
     public void whenArrayHas6Then0(){
         FindLoop findLoop = new FindLoop();
         int[] input = new int[] {5, 10, 3, 5, 5, 7};
+        int start = 0;
+        int finish = 5;
         int value = 6;
-        int result = findLoop.indexOf(input,value);
+        int result = findLoop.indexOf(input,value, start, finish);
         int expect = -1;
        assertThat(result, is(expect));
    }
+    @Test
+    public void whenFind3() {
+        FindLoop findLoop = new FindLoop();
+        int[] input = new int[] {5, 2, 10, 2, 4};
+        int value = 2;
+        int start = 0;
+        int finish = 4;
+        int result = findLoop.indexOf(input, value, start, finish);
+        int expect = 1;
+        assertThat(result, is(expect));
+    }
 }
