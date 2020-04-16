@@ -2,8 +2,14 @@ package ru.job4j.array;
 
 public class ArrayDefinition {
     public static void main(String[] args) {
-        short [] array = new short[10];
-        String [] array1 = new String[100500];
-        float [] array2 = new float[40];
+        String [] names = new String[4];
+        names[0] = "Alexander";
+        names[1] = "Anton";
+        names[2] = "Dmitriy";
+        names[3] = "Agata";
+        System.out.println(names[0]);
+        System.out.println(names[1]);
+        System.out.println(names[2]);
+        System.out.println(names[3]);
     }
 }
