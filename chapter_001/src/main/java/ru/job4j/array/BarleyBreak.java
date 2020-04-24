@@ -2,19 +2,13 @@ package ru.job4j.array;
 
 public class BarleyBreak {
     public static void main(String[] args) {
-        int [][] array = new int [3][3];
-        array[0][0] = 1;
-        array[0][1] = 2;
-        array[0][2] = 3;
-        array[1][0] = 4;
-        array[1][1] = 5;
-        array[1][2] = 6;
-        array[2][0] = 7;
-        array[2][1] = 8;
-        array[2][2] = 9;
-        for (int i = 0; i < array.length;i++ ){
-            for (int j = 0; j < array.length; j++ ) {
-                System.out.println(array[i][j]);
+        int [][] array = new int [3][3]; // создаем двойной массив
+        int count = 1; // создаем переменную которую будем увеличивать
+        for (int i = 0; i < array.length;i++ ){// большой цикл
+            for (int j = 0; j < array.length; j++ ) { // внутренний цикл
+                array[i][j] = count; // приравниваем массив к переменной count
+                count++; // увеличиваем count на 1 с каждым проходом цикла
+                System.out.println(array[i][j]); // выводим массив
             }
         }
     }

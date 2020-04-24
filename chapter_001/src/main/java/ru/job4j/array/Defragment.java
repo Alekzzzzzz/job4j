@@ -1,25 +1,28 @@
 package ru.job4j.array;
 
 public class Defragment {
-    public static String[] compress(String[] array) {
-        for (int index = 0; index < array.length; index++) {
-            if (array[index] == null) {//если индекс = null то
-                int point = index;//создаем переменную которая не будет = null
-                int count = point;
-               while (count < array.length - 1){
-                   if(array[count +1] != null){
-                       String s = array[point];
-                       array[point]=array[count + 1];
-                       array[count + 1]= s;
-                       point++;
-                   }else {
-                       count++;
-                   }
 
-               }
+    public static String[] compress(String[] array) {
+
+        for (int index = 0; index < array.length; index++) {
+
+            if (array[index] == null) {
+
+                int j = index + 1;
+
+                while (j < array.length){
+
+                    if (array[j] != null){
+
+                        array[index] = array[j];
+                        array[j] = null;
+                        break;
+                    }
+                    j++;
+                }
 
             }
-            System.out.print(array[index] + " ");
+            System.out.print(array[index] + " "); // вывод на экран массив[с индексом] + " пробел"
         }
         return array;
     }
