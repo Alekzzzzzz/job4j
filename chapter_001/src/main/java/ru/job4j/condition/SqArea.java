@@ -1,6 +1,7 @@
 package ru.job4j.condition;
 
 /**
+ * ищем площадь
  * SqArea
  * @author Alexander Gaponenko (Proton1987@mail.ru)
  *

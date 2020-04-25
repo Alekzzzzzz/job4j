@@ -11,12 +11,11 @@ import static org.junit.Assert.assertThat;
  * @since 0.1
  */
 public class SqAreaTest {
+
     /**
      * Test na ploshad
      */
-
     @Test
-
     public  void ploshad() {
         int kvadrat;
         int pryamougolnik;

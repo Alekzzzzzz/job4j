@@ -1,6 +1,7 @@
 package ru.job4j.calculator;
 
 import org.junit.Test;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -12,13 +13,16 @@ import static org.junit.Assert.assertThat;
  * @since 0.1
  */
 
-public class CalculatorTest  {
+public class CalculatorTest {
     /**
+     * тест метод суммы
+     *
+     * <p>
      * Test add
      */
 
     @Test
-    public void whenAddOnePlusOneThenTwo()  {
+    public void whenAddOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
         double result = calc.add(1D, 1D);
         double expected = 2D;
@@ -26,11 +30,14 @@ public class CalculatorTest  {
     }
 
     /**
+     * тест метод разности
+     *
+     * <p>
      * Test subtract
      */
 
     @Test
-    public void whenAddOneMinusOneThenTwo()  {
+    public void whenAddOneMinusOneThenTwo() {
         Calculator calc = new Calculator();
         double result = calc.subtract(4D, 2D);
         double expected = 2D;
@@ -38,11 +45,14 @@ public class CalculatorTest  {
     }
 
     /**
+     * тест метод частного
+     *
+     * <p>
      * Test div
      */
 
     @Test
-    public void whenAddOneDivOneThenTwo()  {
+    public void whenAddOneDivOneThenTwo() {
         Calculator calc = new Calculator();
         double result = calc.div(4D, 2D);
         double expected = 2D;
@@ -50,11 +60,14 @@ public class CalculatorTest  {
     }
 
     /**
+     * тест метод произведения
+     *
+     * <p>
      * Test multiple
      */
 
     @Test
-    public void whenAddOneMultipleOneThenTwo()  {
+    public void whenAddOneMultipleOneThenTwo() {
         Calculator calc = new Calculator();
         double result = calc.multiple(2D, 1D);
         double expected = 2D;

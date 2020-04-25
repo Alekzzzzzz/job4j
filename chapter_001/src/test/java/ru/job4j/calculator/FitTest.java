@@ -6,6 +6,8 @@ package ru.job4j.calculator;
         import static org.junit.Assert.assertThat;
 
 /**
+ * Тест класс для вычесления идеального веса для мужчины и женщины
+ *
  * @author Alexander Gaponenko (Proton1987@yandex.ru)
  * @version $Id$
  * since 0.1

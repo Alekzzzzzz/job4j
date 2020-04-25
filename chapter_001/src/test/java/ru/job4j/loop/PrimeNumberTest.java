@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  * PrimeNumberTest
+ *
  * @author Alexander Gaponenko (Proton1987@yandex.ru)
  */
 public class PrimeNumberTest {

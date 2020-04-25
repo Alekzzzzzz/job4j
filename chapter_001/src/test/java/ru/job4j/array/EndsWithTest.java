@@ -5,6 +5,9 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
+/**
+ * Тест класс для проверки одинакового окончания значений в элементах массива
+ */
 public class EndsWithTest {
 
     @Test

@@ -5,6 +5,10 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class MaxTest {
+
+    /**
+     * Тест метод для проверки большего значения
+     */
     @Test
     public void whenMax1To2Then2() {
         Max max = new Max();

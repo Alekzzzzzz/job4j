@@ -5,25 +5,29 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
+/**
+ * Тест класс для проверки количества месяцев
+ */
 public class FitnessTest {
+
     @Test
     public void whenIvanGreatNik() {
         Fitness fit = new Fitness();
-        int days = fit.calc(95, 90);
-        assertThat(days, is(0));
+        int month = fit.calc(90, 90);
+        assertThat(month, is(0));
     }
 
     @Test
     public void whenIvanLessByOneNik() {
         Fitness fit = new Fitness();
-        int days = fit.calc(90, 95);
-        assertThat(days, is(1));
+        int month = fit.calc(90, 95);
+        assertThat(month, is(1));
     }
 
     @Test
     public void whenIvanLessByFewNik() {
         Fitness fit = new Fitness();
-        int days = fit.calc(50, 90);
-        assertThat(days, is(2));
+        int month = fit.calc(50, 90);
+        assertThat(month, is(2));
     }
 }

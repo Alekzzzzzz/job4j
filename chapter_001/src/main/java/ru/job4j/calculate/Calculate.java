@@ -7,17 +7,9 @@ package ru.job4j.calculate;
  * @version $Id$
  */
 public class Calculate {
-    /**
-     * Main.
-     *
-     * @param args - args.
-     */
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
 
     /**
-     * Method echo.
+     * на вход принимаем имя на выход получаем Echo, echo, echo : + name
      *
      * @param name Your name.
      * @return Echo plus your name.

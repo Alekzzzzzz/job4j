@@ -2,6 +2,7 @@ package ru.job4j.converter;
 
 /**
  * Корвертор валюты.
+ *
  * @author Alexander Gaponenko (Proton1987@yandex.ru)
  * @version $Id$
  *

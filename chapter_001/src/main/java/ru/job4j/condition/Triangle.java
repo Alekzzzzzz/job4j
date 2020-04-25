@@ -39,10 +39,6 @@ public class Triangle {
            return a < b + c && b < a + c && c < a + b;
        }
 
-
-
-
-
     /**
      * Метод должен вычислить площадь треугольника.
      *

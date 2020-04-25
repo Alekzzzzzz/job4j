@@ -4,6 +4,9 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * Тест для проверки сортировки пустых ячеек.
+ */
 public class DefragmentTest {
 
     @Test

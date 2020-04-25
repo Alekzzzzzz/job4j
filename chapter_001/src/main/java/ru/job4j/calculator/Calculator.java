@@ -6,6 +6,8 @@ package ru.job4j.calculator;
  */
 public class Calculator {
     /**
+     * На вход принимаем два значения на выходе получаем сумму
+     *
      * add
      * @param first - first
      * @param second -second
@@ -16,6 +18,7 @@ public class Calculator {
     }
 
     /**
+     * на вход принимаем два значения на выходе получаем разность
      * subtract
      * @param first - first
      * @param second -second
@@ -26,6 +29,8 @@ public class Calculator {
     }
 
     /**
+     * на вход принимаем два значения на выходе получаем частное
+     *
      * div
      * @param first - first
      * @param second - second
@@ -34,7 +39,9 @@ public class Calculator {
     public double div(double first, double second) {
         return first / second;
     }
+
     /**
+     * на вход принимаем два значения на выходе получаем произведение
      * multiple
      * @param first - first
      * @param second - second

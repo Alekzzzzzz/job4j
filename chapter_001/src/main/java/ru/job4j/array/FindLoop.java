@@ -1,14 +1,22 @@
 package ru.job4j.array;
 
 public class FindLoop {
+    /**
+     * Ищем индекс с опредеоенным числом в массиве
+     *
+     * @param data
+     * @param el
+     * @param start
+     * @param finish
+     * @return
+     */
     public static int indexOf(int[] data, int el, int start, int finish) {
-        int rst = -1; // если элемента нет в массиве, то возвращаем -1.
-        for (int index = start; index < finish; index++) {// проходим по циклу от 0 до выбранного числа
-            if (data[index] == el) {// если индекс = выбранному числу
-                rst = index;// то выводим индекс
+        int rst = -1;
+        for (int index = start; index < finish; index++) {
+            if (data[index] == el) {
+                rst = index;
                 break;
             }
-
         }
         return rst;
     }

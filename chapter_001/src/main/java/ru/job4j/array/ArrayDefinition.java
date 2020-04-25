@@ -1,8 +1,13 @@
 package ru.job4j.array;
 
 public class ArrayDefinition {
+    /**
+     * Присваиваем значение к элементам массива
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        String [] names = new String[4];
+        String[] names = new String[4];
         names[0] = "Alexander";
         names[1] = "Anton";
         names[2] = "Dmitriy";
