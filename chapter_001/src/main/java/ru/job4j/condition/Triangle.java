@@ -52,14 +52,17 @@ public class Triangle {
      */
     public double area(int x1, int y1, int x2, int y2, int x3, int y3) {
         double rsl = -1;
-        double a = new Point().distance(x1, y1, x2, y2);
-        double b = new Point().distance(x2, y2, x3, y3);
-        double c = new Point().distance(x1, y1, x3, y3);
-        double p = period(a, b, c);
-        if (this.exist(a, b, c)) {
+        Point a = new Point(x1,y1,x2,y2);
+        double dist = a.distance(a);
+        Point b = new Point(x2,y2,x3,y3);
+        double dist1 = b.distance(b);
+        Point c = new Point(x1,y1,x3,y3);
+        double dist2 = c.distance(c);
+        double p = period(dist, dist1, dist2);
+        if (this.exist(dist, dist1, dist2)) {
             // написать формулу для расчета площади треугольника.
 
-            rsl = p *(p - a) * (p - b) * (p - c);
+            rsl = p *(p - dist) * (p - dist1) * (p - dist2);
            rsl = Math.sqrt(rsl);
         }
         return rsl;
