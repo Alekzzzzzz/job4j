@@ -60,7 +60,7 @@ public class Triangle {
      *
      * @return Вернуть площадь, если треугольник существует или -1.
      */
-    public double area(Triangle that) {
+    public double area() {
         double rsl = -1;
         double a = first.distance(second);
         double b = first.distance(third);
