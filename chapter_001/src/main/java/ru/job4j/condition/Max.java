@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 public class Max {
     /**
-     * Проверяем что больше левый или правый с помощью тернарного оператора
+     * Перегруженный метод max
      *
      * @param left
      * @param right
@@ -10,5 +10,13 @@ public class Max {
      */
     public int max(int left, int right) {
         return left >= right ? left: right;
+    }
+
+    public int max(int left, int right,int front) {
+        return max(max(left,right),front);
+    }
+
+    public int max(int left, int right,int front,int back) {
+        return max(max(left,right,front),back);
     }
 }
