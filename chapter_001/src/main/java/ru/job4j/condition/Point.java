@@ -9,13 +9,26 @@ public class Point {
 
     private int y;
 
+    private int z;
+
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
     }
 
+    public Point(int first, int second, int third) {
+        this.x = first;
+        this.y = second;
+        this.z = third;
+    }
+
     public double distance(Point that) {
         double result = sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
+        return result;
+    }
+
+    public double distance3d(Point that) {
+        double result = sqrt(pow(this.x - that.x,2) + pow(this.y - that.y, 2) + pow(this.z - that.z, 2));
         return result;
     }
 
@@ -24,5 +37,10 @@ public class Point {
         Point b = new Point(0, 2);
         double dist = a.distance(b);
         System.out.println(dist);
+
+        Point c = new Point(0,0,0);
+        Point j = new Point(0,0,3);
+        double dist1 = c.distance3d(j);
+        System.out.println(dist1);
     }
 }

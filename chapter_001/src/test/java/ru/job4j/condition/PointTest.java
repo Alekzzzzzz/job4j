@@ -15,4 +15,13 @@ public class PointTest {
         System.out.println(result);
         assertThat(result, is(10D));
     }
+
+    @Test
+    public void whenZeroAndTenThenTen1(){
+        Point a = new Point(0,0,0);
+        Point b = new Point(0,0,10);
+        double result = a.distance3d(b);
+        System.out.println(result);
+        assertThat(result, is(10D));
+    }
 }
