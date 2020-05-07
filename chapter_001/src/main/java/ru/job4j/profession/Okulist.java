@@ -1,19 +1,21 @@
 package ru.job4j.profession;
 
-import java.time.LocalDate;
 
-// все неправильно
 public class Okulist extends Doctor {
-    public Okulist(String name, String surname, String education, String birthday) {
-        super(name, surname, education, birthday);
-    }
 
     public boolean lechitEyePain(Pacient pacient){
-        boolean result = pacient.isEyePain();
-        if (pacient.isEyePain() == true){
+        System.out.println("Здравствуйте я окулист что у Вас?");
+        System.out.println();
+        boolean result = true;
+        if (pacient.isEyePain()){
+            System.out.println("Давайте попробуем Вас вылечить");
+            System.out.println();
+            System.out.println("Мы Вас вылечили теперь вы снова хорошо видете");
             result = false;
+        }else {
+            System.out.println("У вас нет проблем с глазами вам нужен другой специалист");
         }
-        System.out.println("Отлично теперь вы снова хорошо видете");
+
         return result;
     }
 

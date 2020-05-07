@@ -1,6 +1,5 @@
 package ru.job4j.profession;
 
-import java.time.LocalDate;
 
 public class Profession {
 
@@ -9,27 +8,40 @@ public class Profession {
     private String education;
     private String birthday;
 
-    public Profession(String name, String surname, String education, String birthday) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public void setEducation(String education) {
         this.education = education;
+    }
+
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
     public String getName() {
+        System.out.println("Здравствуйте меня зовут " + name);
         return name;
     }
 
     public String getSurname() {
-        return name;
+        System.out.println("Мая фамилия " + surname);
+        return surname;
     }
 
     public String getEducation() {
-        return name;
+        System.out.println("По специальности я " + education);
+        return education;
     }
 
     public String getBirthday() {
-        return name;
+        System.out.println("моя дата рождения " + birthday);
+        return birthday;
     }
 
 }
